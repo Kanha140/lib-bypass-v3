@@ -43,7 +43,10 @@ def init_db():
 
 
 def is_owner(user_id: int) -> bool:
-    return int(user_id) == int(config.OWNER_ID)
+    uid = int(user_id)
+    if hasattr(config, "OWNER_IDS") and uid in config.OWNER_IDS:
+        return True
+    return uid == int(config.OWNER_ID)
 
 
 def is_reseller(user_id: int) -> bool:
