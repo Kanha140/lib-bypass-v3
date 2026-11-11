@@ -11,7 +11,9 @@ API_KEY = os.getenv("API_KEY", "AK-FF-300D-7842-11C7-7FDE")
 API_BASE_URL = os.getenv("API_BASE_URL", "https://br-lib-bypass-resselers.vercel.app/api/v1").rstrip("/")
 
 # Discord Server / Guild & Channel IDs
-OWNER_ID = int(os.getenv("OWNER_ID", "1559978348103471275"))
+raw_owner_ids = os.getenv("OWNER_IDS") or os.getenv("OWNER_ID") or "1378068938847424522,1559978348103471275"
+OWNER_IDS = [int(x.strip()) for x in str(raw_owner_ids).split(",") if x.strip()]
+OWNER_ID = int(os.getenv("OWNER_ID", "1378068938847424522"))
 PANEL_CHANNEL_ID = int(os.getenv("PANEL_CHANNEL_ID", "1570102018519990443"))
 GUILD_ID = int(os.getenv("GUILD_ID", "1559978348103471275"))
 RECHARGE_CONTACT_ID = os.getenv("RECHARGE_CONTACT_ID", "1559978348103471275")
