@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: lib-bypass-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: API_KEY
+        value: AK-FF-0078-5B26-7C2B-7FC6
+      - key: API_BASE_URL
+        value: https://br-lib-bypass-resselers.vercel.app/api/v1
+      - key: OWNER_ID
+        value: "1378068938847424522"
+      - key: PANEL_CHANNEL_ID
+        value: "1569416063932698624"
+      - key: GUILD_ID
+        value: "1569415110961668126"
+      - key: RECHARGE_CONTACT_ID
+        value: "1378068938847424522"
+      - key: CLIENT_ROLE_NAME
+        value: "BYPASS CLIENT"
