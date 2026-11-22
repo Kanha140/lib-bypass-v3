@@ -6,9 +6,9 @@ from api_client import api
 
 def create_main_panel_embed() -> discord.Embed:
     embed = discord.Embed(
-        title="🛡️ LIB BYPASS — KEY GENERATION PANEL",
+        title="🛡️ ULTIMATE BYPASS — KEY GENERATION PANEL",
         description=(
-            "Welcome to the official **LIB BYPASS** automated license portal!\n\n"
+            "Welcome to the official **ULTIMATE BYPASS** automated license portal!\n\n"
             "Use the interactive buttons below to generate keys, check your balance, or reset HWID.\n\n"
             "📌 **Quick Actions:**\n"
             "🗝️ **Generate Key:** Select duration & generate instantly\n"
@@ -21,7 +21,7 @@ def create_main_panel_embed() -> discord.Embed:
         ),
         color=config.COLOR_PRIMARY
     )
-    embed.set_footer(text="LIB BYPASS • Automated 24/7 Delivery")
+    embed.set_footer(text="ULTIMATE BYPASS • Automated 24/7 Delivery")
     # Glowing cyber lock icon thumbnail
     embed.set_thumbnail(url="https://cdn-icons-png.flaticon.com/512/2092/2092663.png")
     return embed
