@@ -7,7 +7,7 @@ load_dotenv()
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN", "")
 
 # Upstream API Configuration
-API_KEY = os.getenv("API_KEY", "AK-FF-300D-7842-11C7-7FDE")
+API_KEY = os.getenv("API_KEY", "bstk_sk_b174f4649d01e74b97b6e98ccc08802e689e486a")
 API_BASE_URL = os.getenv("API_BASE_URL", "https://br-lib-bypass-resselers.vercel.app/api/v1").rstrip("/")
 
 # Discord Server / Guild & Channel IDs
