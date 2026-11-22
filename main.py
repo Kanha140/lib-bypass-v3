@@ -1,5 +1,14 @@
 import os
+import sys
 import asyncio
+
+if sys.platform == "win32":
+    try:
+        import ctypes
+        ctypes.windll.kernel32.SetConsoleTitleW("ULTIMATE BYPASS")
+    except Exception:
+        pass
+
 import discord
 from discord.ext import commands
 from discord import app_commands
@@ -107,7 +116,7 @@ class LibBypassBot(commands.Bot):
         await self.change_presence(
             activity=discord.Activity(
                 type=discord.ActivityType.watching,
-                name="LIB BYPASS • License Portal"
+                name="ULTIMATE BYPASS • License Portal"
             )
         )
 
