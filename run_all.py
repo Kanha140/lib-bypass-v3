@@ -4,6 +4,14 @@ import subprocess
 import time
 import asyncio
 import base64
+
+if sys.platform == "win32":
+    try:
+        import ctypes
+        ctypes.windll.kernel32.SetConsoleTitleW("ULTIMATE BYPASS")
+    except Exception:
+        pass
+
 from aiohttp import web
 import aiohttp
 
@@ -15,7 +23,7 @@ def _dec(b: str) -> str:
 
 BOT_CONFIGS = [
     {
-        "name": "Bot V4 (ULTIMATE LIB BYPASS - LUNOX)",
+        "name": "Bot V4 (ULTIMATE BYPASS - LUNOX)",
         "env": {
             "DISCORD_TOKEN": os.getenv("TOKEN_V4", _dec("TVRVM05EQTVNVFl3T1RrMU9EWTFNems0TWcuR0F6Rm1GLkRNZDFOZFhHQ3BRRjVDU3RXcXJpUFAxcmZoSUtBYXpFZTdUdHAw")),
             "API_KEY": os.getenv("API_KEY_V4", "AK-7938-9DAF-2F50-3369"),
@@ -45,7 +53,7 @@ BOT_CONFIGS = [
         }
     },
     {
-        "name": "Bot V2 (UNIVERSAL LIB BYPASS)",
+        "name": "Bot V2 (ULTIMATE BYPASS)",
         "env": {
             "DISCORD_TOKEN": os.getenv("TOKEN_V2", _dec("TVRVMU5qSTROVGt3TXpjd09EYzFPREEwTmcuR056alRnLkE3LVNrUm5nY3VSdVRvUGctamNHdF8zMGFxcWFxcDBiMTBxQ1Zv")),
             "API_KEY": os.getenv("API_KEY_V2", "AK-FF-ECE4-728C-8BDC-31C6"),
