@@ -15,6 +15,21 @@ def _dec(b: str) -> str:
 
 BOT_CONFIGS = [
     {
+        "name": "Bot V4 (ULTIMATE LIB BYPASS - LUNOX)",
+        "env": {
+            "DISCORD_TOKEN": os.getenv("TOKEN_V4", _dec("TVRVM05EQTVNVFl3T1RrMU9EWTFNems0TWcuR0F6Rm1GLkRNZDFOZFhHQ3BRRjVDU3RXcXJpUFAxcmZoSUtBYXpFZTdUdHAw")),
+            "API_KEY": os.getenv("API_KEY_V4", "AK-7938-9DAF-2F50-3369"),
+            "OWNER_ID": "1530209496570532041",
+            "OWNER_IDS": "1530209496570532041,1378068938847424522",
+            "PANEL_CHANNEL_ID": "1574100611081838763",
+            "GUILD_ID": "0",
+            "RECHARGE_CONTACT_ID": "1530209496570532041",
+            "CLIENT_ROLE_NAME": "ULTIMATE LIB",
+            "DB_FILE": "db_v4.db",
+            "ENABLE_WEB_SERVER": "0"
+        }
+    },
+    {
         "name": "Bot V3 (LEGACY BYPASS)",
         "env": {
             "DISCORD_TOKEN": os.getenv("TOKEN_V3", _dec("TVRVM01ERXhOVE0zTWpFNE5UZ3hOekl6T1EuR3BQbkJqLjBQem5UcXFxa3RER2p1M2lnS1N1cDZQeWV0T1F0MXlmdEVqd0JZ")),
