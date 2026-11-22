@@ -4,7 +4,8 @@ from typing import Optional, List, Dict, Any
 from datetime import datetime
 import config
 
-DB_FILE = os.path.join(os.path.dirname(__file__), "bot_database.db")
+DB_NAME = os.getenv("DB_FILE", "bot_database.db")
+DB_FILE = os.path.join(os.path.dirname(__file__), DB_NAME)
 
 
 def get_connection() -> sqlite3.Connection:
