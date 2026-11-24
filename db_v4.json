@@ -38,7 +38,7 @@
     },
     {
       "user_id": 1442600949414756423,
-      "credits": 999886,
+      "credits": 999885,
       "added_by": 0,
       "created_at": "2026-11-24 08:07:25"
     },
@@ -328,8 +328,18 @@
       "days": 1,
       "credits_spent": 1,
       "created_at": "2026-11-24 10:51:59",
+      "status": "DELETED"
+    },
+    {
+      "id": 29,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-YWPQ-A33X",
+      "username": "BR-YWPQ-A33X",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-24 10:52:05",
       "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795517522.4470646
+  "updated_at": 1795517528.7967935
 }
