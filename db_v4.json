@@ -133,7 +133,17 @@
       "credits_spent": 3,
       "created_at": "2026-11-24 08:21:58",
       "status": "ACTIVE"
+    },
+    {
+      "id": 10,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-AWNU-EJJL",
+      "username": "BR-AWNU-EJJL",
+      "days": 3,
+      "credits_spent": 3,
+      "created_at": "2026-11-24 08:23:53",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795508631.4532795
+  "updated_at": 1795508637.8234992
 }
