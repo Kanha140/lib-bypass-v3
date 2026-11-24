@@ -11,5 +11,5 @@ venv/
 .venv/
 env/
 
-# Databases
-bot_database.db
+# Databases (tracked so fresh clones have initial seeds)
+# bot_database.db
