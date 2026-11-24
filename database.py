@@ -3,9 +3,11 @@ import os
 from typing import Optional, List, Dict, Any
 from datetime import datetime
 import config
+import cloud_sync
 
 DB_NAME = os.getenv("DB_FILE", "bot_database.db")
 DB_FILE = os.path.join(os.path.dirname(__file__), DB_NAME)
+sync_engine = cloud_sync.CloudSync(DB_FILE)
 
 
 def get_connection() -> sqlite3.Connection:
@@ -41,6 +43,12 @@ def init_db():
             )
         """)
         conn.commit()
+
+    # Restore latest persistent data from cloud if available
+    try:
+        sync_engine.restore_from_cloud()
+    except Exception as e:
+        print(f"[Database] restore_from_cloud error: {e}", flush=True)
 
 
 def is_owner(user_id: int) -> bool:
@@ -79,7 +87,8 @@ def add_reseller(user_id: int, credits: int = 0, added_by: int = 0) -> bool:
                 credits = credits + excluded.credits
         """, (user_id, credits, added_by))
         conn.commit()
-        return True
+    sync_engine.mark_dirty()
+    return True
 
 
 def remove_reseller(user_id: int) -> bool:
@@ -87,7 +96,10 @@ def remove_reseller(user_id: int) -> bool:
         cursor = conn.cursor()
         cursor.execute("DELETE FROM resellers WHERE user_id = ?", (user_id,))
         conn.commit()
-        return cursor.rowcount > 0
+        success = cursor.rowcount > 0
+    if success:
+        sync_engine.mark_dirty()
+    return success
 
 
 def add_credits(user_id: int, amount: int) -> int:
@@ -102,7 +114,9 @@ def add_credits(user_id: int, amount: int) -> int:
         conn.commit()
         cursor.execute("SELECT credits FROM resellers WHERE user_id = ?", (user_id,))
         row = cursor.fetchone()
-        return row["credits"] if row else amount
+        new_val = row["credits"] if row else amount
+    sync_engine.mark_dirty()
+    return new_val
 
 
 def deduct_credits(user_id: int, amount: int) -> bool:
@@ -124,7 +138,8 @@ def deduct_credits(user_id: int, amount: int) -> bool:
             (amount, user_id)
         )
         conn.commit()
-        return True
+    sync_engine.mark_dirty()
+    return True
 
 
 def refund_credits(user_id: int, amount: int):
@@ -137,6 +152,7 @@ def refund_credits(user_id: int, amount: int):
             (amount, user_id)
         )
         conn.commit()
+    sync_engine.mark_dirty()
 
 
 def record_generated_key(user_id: int, license_key: str, username: str, days: int, credits_spent: int):
@@ -147,6 +163,7 @@ def record_generated_key(user_id: int, license_key: str, username: str, days: in
             VALUES (?, ?, ?, ?, ?)
         """, (user_id, license_key, username, days, credits_spent))
         conn.commit()
+    sync_engine.mark_dirty()
 
 
 def get_user_keys(user_id: int, limit: int = 10) -> List[Dict[str, Any]]:
@@ -188,7 +205,10 @@ def delete_all_user_keys_db(user_id: int) -> int:
             WHERE user_id = ? AND status != 'DELETED'
         """, (user_id,))
         conn.commit()
-        return cursor.rowcount
+        count = cursor.rowcount
+    if count > 0:
+        sync_engine.mark_dirty()
+    return count
 
 
 def mark_key_deleted(key_or_user: str) -> bool:
@@ -200,7 +220,10 @@ def mark_key_deleted(key_or_user: str) -> bool:
             WHERE license_key = ? OR username = ?
         """, (key_or_user, key_or_user))
         conn.commit()
-        return cursor.rowcount > 0
+        success = cursor.rowcount > 0
+    if success:
+        sync_engine.mark_dirty()
+    return success
 
 
 # Initialize database upon import
