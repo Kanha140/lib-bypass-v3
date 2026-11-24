@@ -38,7 +38,7 @@
     },
     {
       "user_id": 1442600949414756423,
-      "credits": 999916,
+      "credits": 999915,
       "added_by": 0,
       "created_at": "2026-11-24 08:07:25"
     },
@@ -269,7 +269,17 @@
       "credits_spent": 1,
       "created_at": "2026-11-24 10:16:34",
       "status": "ACTIVE"
+    },
+    {
+      "id": 23,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-2NV3-52RV",
+      "username": "BR-2NV3-52RV",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-24 10:48:49",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795517187.7680914
+  "updated_at": 1795517331.0332322
 }
