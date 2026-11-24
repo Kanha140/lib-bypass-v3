@@ -32,7 +32,7 @@
     },
     {
       "user_id": 1442600949414756423,
-      "credits": 999973,
+      "credits": 999972,
       "added_by": 0,
       "created_at": "2026-11-24 08:07:25"
     }
@@ -107,7 +107,17 @@
       "credits_spent": 1,
       "created_at": "2026-11-24 08:07:55",
       "status": "ACTIVE"
+    },
+    {
+      "id": 8,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-G5DZ-QQ7V",
+      "username": "BR-G5DZ-QQ7V",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-24 08:10:46",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795507698.004206
+  "updated_at": 1795507849.5502975
 }
