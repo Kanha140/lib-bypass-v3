@@ -89,6 +89,9 @@ processes = {}
 def start_bot(config):
     name = config["name"]
     env = os.environ.copy()
+    env.setdefault("GH_TOKEN", os.getenv("GH_TOKEN", ""))
+    env.setdefault("GH_REPO", os.getenv("GH_REPO", "Kanha140/lib-bypass-v3"))
+    env.setdefault("GH_BRANCH", os.getenv("GH_BRANCH", "db-data"))
     env.update(config["env"])
     script_path = os.path.join(os.path.dirname(__file__), "main.py")
     p = subprocess.Popen(
@@ -126,6 +129,20 @@ async def self_ping_loop():
         except Exception as e:
             print(f"[Keep-Alive] Warning: {e}", flush=True)
 
+async def periodic_cloud_sync_loop():
+    import cloud_sync
+    dbs = ["db_v1.db", "db_v2.db", "db_v3.db", "db_v4.db", "bot_database.db"]
+    while True:
+        await asyncio.sleep(300)
+        try:
+            for db in dbs:
+                p = os.path.join(os.path.dirname(__file__), db)
+                if os.path.exists(p):
+                    cs = cloud_sync.CloudSync(p)
+                    await asyncio.to_thread(cs.push_to_cloud)
+        except Exception as e:
+            print(f"[PeriodicSync] Error: {e}", flush=True)
+
 async def monitor_bots():
     while True:
         for cfg in BOT_CONFIGS:
@@ -153,10 +170,11 @@ async def main():
     await site.start()
     print(f"[*] Multi-Bot Supervisor HTTP Server listening on port {port}", flush=True)
 
-    # Run monitor and self ping
+    # Run monitor, self ping and cloud persistence sync
     await asyncio.gather(
         monitor_bots(),
-        self_ping_loop()
+        self_ping_loop(),
+        periodic_cloud_sync_loop()
     )
 
 if __name__ == "__main__":
