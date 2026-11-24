@@ -143,7 +143,17 @@
       "credits_spent": 3,
       "created_at": "2026-11-24 08:23:53",
       "status": "ACTIVE"
+    },
+    {
+      "id": 11,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-JXC2-24WC",
+      "username": "BR-JXC2-24WC",
+      "days": 3,
+      "credits_spent": 3,
+      "created_at": "2026-11-24 08:24:25",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795508664.0512452
+  "updated_at": 1795508670.3702087
 }
