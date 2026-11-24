@@ -87,7 +87,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-09 18:47:12",
       "status": "ACTIVE"
+    },
+    {
+      "id": 6,
+      "user_id": 1190767968787902564,
+      "license_key": "BR-GACG-DLU8",
+      "username": "BR-GACG-DLU8",
+      "days": 30,
+      "credits_spent": 25,
+      "created_at": "2026-11-24 14:48:06",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795531682.234603
+  "updated_at": 1795531688.6188395
 }
