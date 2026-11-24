@@ -212,8 +212,8 @@
       "days": 30,
       "credits_spent": 25,
       "created_at": "2026-11-24 08:39:22",
-      "status": "ACTIVE"
+      "status": "DELETED"
     }
   ],
-  "updated_at": 1795509563.6654055
+  "updated_at": 1795509590.0724788
 }
