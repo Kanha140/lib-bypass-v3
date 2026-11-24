@@ -6,8 +6,20 @@ import time
 import sqlite3
 import threading
 import requests
+import socket
 from typing import Optional
 from dotenv import load_dotenv
+
+# Force IPv4 on Windows to prevent IPv6 connection timeouts
+if sys.platform == "win32":
+    try:
+        _orig_getaddrinfo = socket.getaddrinfo
+        def _ipv4_getaddrinfo(*args, **kwargs):
+            res = _orig_getaddrinfo(*args, **kwargs)
+            return [r for r in res if r[0] == socket.AF_INET]
+        socket.getaddrinfo = _ipv4_getaddrinfo
+    except Exception:
+        pass
 
 load_dotenv()
 
