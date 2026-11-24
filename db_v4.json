@@ -32,7 +32,7 @@
     },
     {
       "user_id": 1442600949414756423,
-      "credits": 999919,
+      "credits": 999918,
       "added_by": 0,
       "created_at": "2026-11-24 08:07:25"
     },
@@ -213,7 +213,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-24 08:39:22",
       "status": "DELETED"
+    },
+    {
+      "id": 18,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-QDXQ-44CM",
+      "username": "BR-QDXQ-44CM",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-24 08:43:06",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795509590.0724788
+  "updated_at": 1795509786.4824471
 }
