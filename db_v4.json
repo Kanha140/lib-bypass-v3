@@ -445,7 +445,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-24 17:53:44",
       "status": "ACTIVE"
+    },
+    {
+      "id": 40,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-BVDY-YD8H",
+      "username": "BR-BVDY-YD8H",
+      "days": 3,
+      "credits_spent": 3,
+      "created_at": "2026-11-24 19:18:56",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795547932.3157306
+  "updated_at": 1795547939.3303056
 }
