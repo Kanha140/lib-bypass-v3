@@ -435,7 +435,17 @@
       "credits_spent": 1,
       "created_at": "2026-11-24 17:49:08",
       "status": "ACTIVE"
+    },
+    {
+      "id": 39,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-C2MC-BD4K",
+      "username": "BR-C2MC-BD4K",
+      "days": 30,
+      "credits_spent": 25,
+      "created_at": "2026-11-24 17:53:44",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795542823.9396474
+  "updated_at": 1795542830.529908
 }
