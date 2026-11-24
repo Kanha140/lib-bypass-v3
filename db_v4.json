@@ -153,7 +153,17 @@
       "credits_spent": 3,
       "created_at": "2026-11-24 08:24:25",
       "status": "ACTIVE"
+    },
+    {
+      "id": 12,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-3Q4J-NSGC",
+      "username": "BR-3Q4J-NSGC",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-24 08:26:22",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795508781.9847777
+  "updated_at": 1795508788.593042
 }
