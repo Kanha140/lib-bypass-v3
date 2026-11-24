@@ -38,7 +38,7 @@
     },
     {
       "user_id": 1442600949414756423,
-      "credits": 999918,
+      "credits": 999917,
       "added_by": 0,
       "created_at": "2026-11-24 08:07:25"
     },
@@ -239,7 +239,17 @@
       "credits_spent": 1,
       "created_at": "2026-11-24 08:49:24",
       "status": "ACTIVE"
+    },
+    {
+      "id": 20,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-AH35-EY24",
+      "username": "BR-AH35-EY24",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-24 08:49:47",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795510170.836423
+  "updated_at": 1795510187.329516
 }
