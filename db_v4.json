@@ -369,7 +369,17 @@
       "credits_spent": 3,
       "created_at": "2026-11-24 13:22:16",
       "status": "ACTIVE"
+    },
+    {
+      "id": 33,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-QKZT-EZ7T",
+      "username": "BR-QKZT-EZ7T",
+      "days": 3,
+      "credits_spent": 3,
+      "created_at": "2026-11-24 13:49:41",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795528180.9517992
+  "updated_at": 1795528187.9886796
 }
