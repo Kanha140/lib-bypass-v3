@@ -545,7 +545,17 @@
       "credits_spent": 3,
       "created_at": "2026-11-25 18:58:21",
       "status": "ACTIVE"
+    },
+    {
+      "id": 50,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-YCCB-VJ63",
+      "username": "BR-YCCB-VJ63",
+      "days": 3,
+      "credits_spent": 3,
+      "created_at": "2026-11-25 18:59:16",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795633154.3067338
+  "updated_at": 1795633160.6422892
 }
