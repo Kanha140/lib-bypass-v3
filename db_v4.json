@@ -535,7 +535,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-25 16:15:57",
       "status": "ACTIVE"
+    },
+    {
+      "id": 49,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-4AZP-WWPK",
+      "username": "BR-4AZP-WWPK",
+      "days": 3,
+      "credits_spent": 3,
+      "created_at": "2026-11-25 18:58:21",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795633100.7410388
+  "updated_at": 1795633107.438402
 }
