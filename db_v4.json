@@ -485,7 +485,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-25 07:45:53",
       "status": "ACTIVE"
+    },
+    {
+      "id": 44,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-PRQ4-MHDC",
+      "username": "BR-PRQ4-MHDC",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-25 10:02:04",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795600922.0131922
+  "updated_at": 1795600928.7403278
 }
