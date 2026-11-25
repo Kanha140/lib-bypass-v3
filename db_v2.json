@@ -91,7 +91,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-25 05:52:05",
       "status": "ACTIVE"
+    },
+    {
+      "id": 7,
+      "user_id": 1387094143037214724,
+      "license_key": "BR-7C8H-FLWQ",
+      "username": "BR-7C8H-FLWQ",
+      "days": 7,
+      "credits_spent": 7,
+      "created_at": "2026-11-25 07:35:08",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795591915.1240022
+  "updated_at": 1795592109.2921946
 }
