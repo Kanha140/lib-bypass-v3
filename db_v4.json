@@ -515,7 +515,17 @@
       "credits_spent": 7,
       "created_at": "2026-11-25 15:21:37",
       "status": "ACTIVE"
+    },
+    {
+      "id": 47,
+      "user_id": 1442600949414756423,
+      "license_key": "BR-JHQ5-TA6S",
+      "username": "BR-JHQ5-TA6S",
+      "days": 30,
+      "credits_spent": 25,
+      "created_at": "2026-11-25 16:06:04",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795622764.0410252
+  "updated_at": 1795622782.7027125
 }
