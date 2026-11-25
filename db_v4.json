@@ -2,7 +2,7 @@
   "resellers": [
     {
       "user_id": 916621110051737621,
-      "credits": 100,
+      "credits": 93,
       "added_by": 0,
       "created_at": "2026-11-24 16:54:43"
     },
@@ -507,5 +507,5 @@
       "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795619930.0008416
+  "updated_at": 1795620095.4301429
 }
