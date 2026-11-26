@@ -575,7 +575,17 @@
       "credits_spent": 3,
       "created_at": "2026-11-26 09:25:13",
       "status": "ACTIVE"
+    },
+    {
+      "id": 53,
+      "user_id": 1458905188667621392,
+      "license_key": "BR-5ZEE-GWUS",
+      "username": "BR-5ZEE-GWUS",
+      "days": 30,
+      "credits_spent": 25,
+      "created_at": "2026-11-26 09:38:49",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795685925.660756
+  "updated_at": 1795685932.506564
 }
