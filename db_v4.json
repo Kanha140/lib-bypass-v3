@@ -585,7 +585,17 @@
       "credits_spent": 25,
       "created_at": "2026-11-26 09:38:49",
       "status": "ACTIVE"
+    },
+    {
+      "id": 54,
+      "user_id": 1530209496570532041,
+      "license_key": "BR-GNNV-L8K3",
+      "username": "BR-GNNV-L8K3",
+      "days": 30,
+      "credits_spent": 25,
+      "created_at": "2026-11-27 09:25:25",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795771262.6053114
+  "updated_at": 1795771527.110784
 }
