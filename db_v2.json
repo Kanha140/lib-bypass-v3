@@ -101,7 +101,17 @@
       "credits_spent": 7,
       "created_at": "2026-11-25 07:35:08",
       "status": "ACTIVE"
+    },
+    {
+      "id": 8,
+      "user_id": 1387094143037214724,
+      "license_key": "BR-JNYZ-LLE8",
+      "username": "BR-JNYZ-LLE8",
+      "days": 1,
+      "credits_spent": 1,
+      "created_at": "2026-11-27 16:16:03",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795795919.6523292
+  "updated_at": 1795796167.3671963
 }
