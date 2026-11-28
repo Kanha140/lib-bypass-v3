@@ -137,7 +137,17 @@
       "credits_spent": 1,
       "created_at": "2026-11-28 07:49:27",
       "status": "ACTIVE"
+    },
+    {
+      "id": 11,
+      "user_id": 1460873170793005066,
+      "license_key": "BR-E9R4-XS5E",
+      "username": "BR-E9R4-XS5E",
+      "days": 30,
+      "credits_spent": 25,
+      "created_at": "2026-11-28 09:45:52",
+      "status": "ACTIVE"
     }
   ],
-  "updated_at": 1795859148.0931668
+  "updated_at": 1795859154.2150354
 }
